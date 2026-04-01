@@ -32,44 +32,75 @@ MathJax.Hub.Config({
 <h1>Research</h1>
 </div>
 <h2>Current Projects</h2>
-<p><b>Snaking Bifurcation on Rings</b>
+<p><b>Modeling Online-to-Offline Spillover</b>
 </p>
-<p><i>Summer 2020 - Now</i>
+<p>Social media is transforming various aspects of offline life, from everyday decisions such as dining choices to the progression of conflicts. In this study, we propose a modeling framework that couples an online social network layer with an offline physical layer to analyze how engagement with a specific topic spills over into offline protest activities. 
 </p>
-<p>Starting from Summer 2020, I have been doing a research project instructed by Professor Björn Sandstede that studies the stationary patterns and bifurcation diagrams in bistable dynamical systems on graphs with small coupling strength. We initially explored numerically on random graphs, and then started focusing on the analysis of localized patterns on ring graphs with symmetric coupling. Specifically, we proved that the sparse coupling case (nearest-neighbor/next-nearest-neighbor coupling) has bifurcation diagram that exhibits a “snaking” pattern where the number of folds increases with the number of nodes, while the all-to-all coupling case always leads to a closed curve with six nodes that begins and ends at two symmetry-breaking bifurcations from the homogeneous solution branch.
+<p>As the first part of this project, we develop a compartmental model in which each individual in a fixed population has an online state on the information layer, as well as an offline state on the physical layer. We consider a stochastic model which involves both online-to-offline effect and offline-to-online feedback and derive a hierarchy of mean-field approximations of varying complexity. These models allow us to estimate the reproductive number and anticipate when surges in activity are likely to occur. 
 </p>
-<p><i>Localized Patterns on Graphs</i>, minisymposium talk at SIAM Conference on Applications of Dynamical Systems (DS23) <br />
-<i>Snaking Bifurcations of Localized Patterns on Ring Lattices</i>, poster presentation at SIAM Conference on Applications of Dynamical Systems (DS21)
+<p><a href="Model_O2O_Poster.pdf" target=&ldquo;blank&rdquo;>Check out poster</a> presented at SIAM Conference on Applications of Dynamical Systems (DS25)<br />
+<a href="https://academic.oup.com/comnet/article-abstract/doi/10.1093/comnet/cnaf057/8525132?utm_source=authortollfreelink&amp;utm_campaign=comnet&amp;utm_medium=email" target=&ldquo;blank&rdquo;>Check out published article</a>
+</p>
+<p>As a future direction, we extend this framework to continuous-variable states to capture individuals&rsquo; levels of engagement. This extension allows analysis of both microscopic and macroscopic dynamics, linking localized behaviors to global system evolution. The flexibility of zooming into the nodal temporal dynamics vs. the population-level dynamics also allows further connection with empirical social dynamics data. Additionally, we aim to incorporate modular community structures and temporal networks to study their impact on collective dynamics.
+</p>
+<p><br />
+</p>
+<p><b>Localized Patterns on Rings</b>
+</p>
+<p>Localized patterns have been observed in applications such as ferrofluid experiments, vegetation models, and urban crime hotspots. These patterns exhibit two distinct coexisting states and are present in systems governed by reaction-diffusion equations with bistable nonlinearity. This research focuses on understanding the impact of graph structure on the existence curves of such localized patterns as the system parameter is varied. In particular, we investigate systems on symmetrically coupled rings and analyze the connections between patterned states as the interaction length varies.
+</p>
+<p>Check out <a href="LocalPatternRing_Poster.pdf" target=&ldquo;blank&rdquo;>poster</a> and <a href="LocalPatternRing_QRCode.pdf" target=&ldquo;blank&rdquo;>related flash talk through QR code</a> presented at Dynamics Days US 2025 <br />
+<i>Localized Patterns on Graphs</i>, minisymposium talk at SIAM Conference on Applications of Dynamical Systems (DS23) <br />
 </p>
 <p><a href="https://github.com/Moyi-Tian/lattice-snaking" target=&ldquo;blank&rdquo;>See Github page</a> <br />
-<a href="https://doi.org/10.1093/imamat/hxab023" target=&ldquo;blank&rdquo;>See the published paper</a>
+<a href="https://doi.org/10.1093/imamat/hxab023" target=&ldquo;blank&rdquo;>See published paper on the first part of this project</a>
+</p>
+<p><br />
+</p>
+<p><b>Data-Driven Modeling for Network Dynamics with Weak Form SINDy</b>
+</p>
+<p>In this project, we extend the study of the coupled system for online-to-offline spillover effects in social activity and examine how data can inform dynamical systems models with underlying network structures, better capturing patterns of social behavior. We investigate how to learn effective models directly from data using Weak Form Sparse Identification of Nonlinear Dynamics (WSINDy), a system identification method for discovering governing equations. Our results show that using more trajectories improves accuracy when noise is high, but only a small number of additional trajectories is needed to gain most of the benefit, with little improvement beyond that. We also find that when networks are sparse, traditional mean-field approximations fail, and identifying effective continuum ODEs directly from stochastic processes yields efficient models that better match the data and provide deeper insight into the underlying dynamics.
+</p>
+<p><i>Learning Models from Network Dynamics Data using Weak Form SINDy</i>, talk at APS Global Physics Summit 2026
+</p>
+<p><br />
+</p>
+<p><b>Learning Dynamics of Information Dissemination among LLM Agents</b>
+</p>
+<p>Online information dissemination is increasingly shaped by automated accounts and LLM-based agents, motivating mathematical models for information spread in heterogeneous agent networks. In this project, we study information propagation on networks of Large Language Model (LLM) agents, where agent behavior is governed by heterogeneous personality traits and probabilistic decision-making. We investigate how different event types and agent heterogeneity influence collective dynamics of information dissemination. We introduce two models: (i) a stochastic agent-based network model and (ii) a system of differential equations derived from a mean-field approximation of the agent dynamics. We fit these models to simulations of armed-conflict news dissemination on networks, where LLM agents with predefined personality traits interact on random graphs. Despite the complexity of agent behavior and event types, we find that the collective dynamics are more accurately described by a reduced Susceptible–Infected (SI)-type model with two effective transmission rates, providing a more accurate low-dimensional description than the detailed stochastic agent-based model. This result suggests that high-dimensional agent interactions give rise to low-dimensional effective dynamics.
+</p>
+<p><a href="https://arxiv.org/abs/2602.23437" target=&ldquo;blank&rdquo;>Check out preprint for this project</a>
 </p>
 <p><br />
 </p>
 <p><b>Inferring Interaction Structure in Opinion Dynamics</b>
 </p>
-<p><i>Collaborative research project starting from the American Mathematical Society’s Mathematics Research Communities program on Complex Social Systems, Summer 2023 - Now</i>
+<p><i>Collaborative research project starting from the American Mathematical Society’s Mathematics Research Communities program on Complex Social Systems</i>
 </p>
-<p>Population opinions follow dynamics that can be modeled as stochastic agent-based systems on the network of individual interactions where opinions can be treated as random variables. We observe evolutions in opinions due to individual interactions, but the underlying microscopic mechanisms are often unknown. In this study, we develop likelihood-based methods, including the derivative-free and EM algorithms, to infer interaction structure from different function families given opinion time-series data.
+<p>Opinion dynamics studies the evolution of beliefs or opinions on networks, where node states evolve through interactions with neighboring agents. Many models in this field assume kernel-based interaction rules that determine how agents update their opinions based on neighboring states. Despite extensive theoretical development, empirical validation of these interaction mechanisms remains limited. Our work formulates an inference problem for kernel-based opinion dynamics, where the interaction function is inferred from noisy time-series observations. We focus on asynchronous, discrete-time stochastic agent-based models and develop likelihood-based inference methods, including derivative-free optimization and expectation-maximization algorithms, that successfully recover the ground-truth kernel parameters given a known network structure and synthetically generated data. Furthermore, we incorporate deep neural networks into the inference framework, enabling nonparametric learning of interaction kernels without imposing restrictive parametric assumptions. This approach allows the recovery of complex interaction structures and provides a pathway for learning empirically grounded and interpretable opinion dynamics models from data.
 </p>
 <p><i>Talk: Inferring Interaction Kernels for Stochastic Agent-Based Opinion Dynamics</i> at JMM 2024
 </p>
 <p><br />
 </p>
+<h2>Previous Projects</h2>
 <p><b>Learning Temporal Exponential Random Graph Models (TERGMs) from Dynamics of Many-Body Interactions</b>
 </p>
-<p><i>Research with Dr. Andrey Lokhov at Los Alamos National Laboratory, Fall 2023 - Now</i>
+<p><i>Research with Dr. Andrey Lokhov at Los Alamos National Laboratory</i>
 </p>
 <p>Many problems in fields such as social and biological sciences involve analyzing populations of entities that are interconnected by relations. Understanding these underlying networks can provide rich information that reveals properties such as what kinds of motifs are the fundamental building blocks and how they change over time, in which way do the microscopic interactions affect each other and contribute to new ties, and how individuals organize themselves into groups. When studying network models, it is important to include stochastic properties since the observed networks are samples from some population distribution and the observed network attributes may be only partial. It is also important to allow temporal evolution of network topology in the studied models since real systems often change over time. To handle these problems, TERGMs, a family of generalized statistical model that supports inference and network evolution, have been proposed and studied as a helpful modeling framework. Our work is to develop an efficient learning algorithm for TERGMs with generalized interaction relations which requires low sampling complexity. The inspiration is from previous work on learning Ising models with efficient sampling method of dynamics data. We extend the algorithm from learning pairwise interactions in Ising models to a more general model with many-body interactions (i.e. higher-order correlations) and construct a framework of learning the corresponding TERGMs using data obtained from dynamical processes.
 </p>
-<h2>Previous Projects</h2>
+<p><a href="TERHGM_Poster.pdf" target=&ldquo;blank&rdquo;>Check out poster</a> presented at 2024 Dynamics Days US
+</p>
+<p><br />
+</p>
 <p><b>Community Robustness under Edge Addition</b>
 </p>
-<p><i>Research with Dr. Pablo Moriano at Oak Ridge National Laboratory, Summer 2022 - Now</i>
+<p><i>Research with Dr. Pablo Moriano at Oak Ridge National Laboratory</i>
 </p>
 <p>Many complex systems such as critical infrastructures, biological networks and social groups, exhibits network structures, and among network properties, communities (or clusters) typically represent essential functional or behavioral units in the networks. These real networks change dynamically and their underlying community structure therefore also evolves over time. Our study focuses on understanding how the community robustness is affected by edge-addition perturbation to the networks. We propose different edge-addition strategies and analyze the effect in synthetic and empirical temporal networks based on computational experiments using community detection algorithms and community similarity metrics. We find that the robustness of communities depends strongly on the choice of detection method.
 </p>
-<p><i>Community Robustness in Temporal Networks under Edge Addition</i>, poster presentation at Dynamics Days US 2023 <br />
+<p><a href="CommunityRobustness_Poster.pdf" target=&ldquo;blank&rdquo;>Check out poster</a> presented at Dynamics Days US 2023 <br />
 <i>How Robust are Communities in Temporal Networks? A Comparative Analysis Using Community Detection Algorithms</i>, lightning talk at SIAM Workshop on Network Science (NS22)
 </p>
 <p><a href="https://github.com/Moyi-Tian/CommunityRobustness" target=&ldquo;blank&rdquo;>See Github page</a> <br />
@@ -91,7 +122,7 @@ MathJax.Hub.Config({
 <h3>Undergraduate Research Projects</h3>
 <p><b>Honors Project in Mathematics: Topological and Algebraic Properties of Braids and Annular Braids</b>
 </p>
-<p><i>Dickinson College, Carlisle, PA, September 2018-May 2019</i>
+<p><i>Dickinson College, Carlisle, PA</i>
 </p>
 <p>I did an honors project advised by Professor David Richeson on using various algebraic descriptions of the annular braid group to analyze maypole dancing during my senior year at Dickinson College. I studied the background knowledge in knots and links, the Artin braid group and the annular braids and explored how we can examine and understand maypole dances using the theories. In my thesis, I gave three presentations to describe the annular braid group and used the annular braid group as a medium to abstract the braids in maypole dances and therefore apply an algebraic analysis. Also, I discussed some essential properties embedded in the maypole braids, which are related to the invariants of annular braids - the crossing number and the step number.
 </p>
@@ -101,7 +132,7 @@ MathJax.Hub.Config({
 </p>
 <p><b>Physics Senior Research: Experimental Realization of Symmetry Breaking in Coupled Logistic Maps</b>
 </p>
-<p><i>Dickinson College, Carlisle, PA, September 2018-May 2019</i>
+<p><i>Dickinson College, Carlisle, PA</i>
 </p>
 <p>During my senior year at Dickinson College, I did a physics project on the coupled logistic maps with my lab partner Houssem Mhiri advised by Professor Lars English. Using the mathematical model of the logistic maps as the theoretical foundation, we modified L’Her’s electronic design, a physical representation of coupled discrete-time logistic maps published in 2016, by implementing it using an Arduino and adding power supplies to control the initial conditions. We further reduced the number of outlets and produced the desired input signals and voltages using a single multifunction DAQ device with LabView. Then, we examined that symmetry-broken solutions manifest in this circuit for appropriately chosen initial conditions, and investigated experimentally the basins of attraction of these solutions, as well as their dependence on the coupling strength. Moreover, we delved into the chaotic regime and constructed experimental bifurcation diagrams. One intriguing phenomenon captured here involves the transition from synchronized chaos to decoherent chaos as the coupling is increased. Finally, we experimentally implemented uni-directional coupling and explored the dynamics of a driven logistic map.
 </p>
@@ -110,7 +141,7 @@ MathJax.Hub.Config({
 <p><a href="https://iopscience.iop.org/article/10.1088/1361-6404/ab3dee" target=&ldquo;blank&rdquo;>See the published paper</a></p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2025-05-27, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-04-01, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>
