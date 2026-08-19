@@ -86,9 +86,17 @@ MathJax.Hub.Config({
 </p>
 <p><i>Collaborative research project starting from the American Mathematical Society’s Mathematics Research Communities program on Complex Social Systems</i>
 </p>
-<p>Opinion dynamics studies the evolution of beliefs or opinions on networks, where node states evolve through interactions with neighboring agents. Many models in this field assume kernel-based interaction rules that determine how agents update their opinions based on neighboring states. Despite extensive theoretical development, empirical validation of these interaction mechanisms remains limited. Our work formulates an inference problem for kernel-based opinion dynamics, where the interaction function is inferred from noisy time-series observations. We focus on asynchronous, discrete-time stochastic agent-based models and develop likelihood-based inference methods, including derivative-free optimization and expectation-maximization algorithms, that successfully recover the ground-truth kernel parameters given a known network structure and synthetically generated data. Furthermore, we incorporate deep neural networks into the inference framework, enabling nonparametric learning of interaction kernels without imposing restrictive parametric assumptions. This approach allows the recovery of complex interaction structures and provides a pathway for learning empirically grounded and interpretable opinion dynamics models from data.
+<p>Opinion dynamics studies the evolution of beliefs or opinions on networks, where node states evolve through interactions with neighboring agents. Many models in this field assume kernel-based interaction rules that determine how agents update their opinions based on neighboring states. Despite extensive theoretical development, empirical validation of these interaction mechanisms remains limited. Our work formulates an inference problem for kernel-based opinion dynamics, where the interaction function is inferred from noisy time-series observations. We focus on discrete-time stochastic agent-based models and develop likelihood-based inference methods, including derivative-free optimization and expectation-maximization algorithms, that successfully recover the ground-truth kernel parameters given a known network structure and synthetically generated data. Furthermore, we incorporate deep neural networks into the inference framework, enabling nonparametric learning of interaction kernels without imposing restrictive parametric assumptions. This approach allows the recovery of complex interaction structures and provides a pathway for learning empirically grounded and interpretable opinion dynamics models from data.
 </p>
 <p><i>Talk: Inferring Interaction Kernels for Stochastic Agent-Based Opinion Dynamics</i> at JMM 2024
+</p>
+<p><br />
+</p>
+<h2>Software</h2>
+<p><b><a href="https://github.com/Moyi-Tian/WENDy-Constrained" target=&ldquo;blank&rdquo;>WENDy-Constrained</a></b>
+</p>
+<p>A MATLAB package extending <a href="https://github.com/MathBioCU/WENDy" target=&ldquo;blank&rdquo;>WENDy</a> so that the coefficients of an ODE system can be tied together across equations through a structure matrix, fixed to values known in advance through an offset vector, or both. Built alongside the weak-form and online-offline modeling projects above, and demonstrated on the two-layer engagement model.
+<a href="https://doi.org/10.5281/zenodo.22006935" target=&ldquo;blank&rdquo;>DOI: 10.5281/zenodo.22006935</a>
 </p>
 <p><br />
 </p>
@@ -150,7 +158,7 @@ MathJax.Hub.Config({
 <p><a href="https://iopscience.iop.org/article/10.1088/1361-6404/ab3dee" target=&ldquo;blank&rdquo;>See the published paper</a></p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-07-21, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-08-19, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>
