@@ -38,6 +38,10 @@ MathJax.Hub.Config({
 </p>
 <p><b>Modeling Online-to-Offline Spillover</b>
 </p>
+<img src="O2O_Framework.png" alt="Diagram of the two-layer online-offline model and its state transitions" style="display:block; width:100%; max-width:680px; margin:10px auto 5px;">
+<p style="font-size:90%; margin:0 5% 15px;">
+(Left) Two-layer online–offline framework. On the online layer, individuals are connected through a social network and are uninterested in the topic (U), engaged (E), or done with engagement (D). On the offline layer, they are not participating (NP), participating (P), or recovered from participation (R). The parameters \(\tau\), \(\eta\), \(\theta\), \(\gamma_i\), and \(\gamma_p\) are positive rates, where \(\tau\) is the transmission rate along each edge from an engaged neighbor and \(\theta\) is the strength of offline-to-online feedback, scaled by the proportion of the population participating offline. (Right) The combined online–offline states and the transitions between them.
+</p>
 <p>Social media is transforming various aspects of offline life, from everyday decisions such as dining choices to the progression of conflicts. In this study, we propose a modeling framework that couples an online social network layer with an offline physical layer to analyze how engagement with a specific topic spills over into offline protest activities. 
 </p>
 <p>As the first part of this project, we develop a compartmental model in which each individual in a fixed population has an online state on the information layer, as well as an offline state on the physical layer. We consider a stochastic model which involves both online-to-offline effect and offline-to-online feedback and derive a hierarchy of mean-field approximations of varying complexity. These models allow us to estimate the reproductive number and anticipate when surges in activity are likely to occur. 
@@ -45,8 +49,6 @@ MathJax.Hub.Config({
 <p><a href="Model_O2O_Poster.pdf" target=&ldquo;blank&rdquo;>Check out poster</a> presented at SIAM Conference on Applications of Dynamical Systems (DS25)<br />
 <i>Talk: Collective Behavior in Social Mobilization: Multilayer Online–Offline Dynamics on Networks</i> at SIAM Conference on the Life Sciences (LS26)<br />
 <a href="https://academic.oup.com/comnet/article-abstract/doi/10.1093/comnet/cnaf057/8525132?utm_source=authortollfreelink&amp;utm_campaign=comnet&amp;utm_medium=email" target=&ldquo;blank&rdquo;>Check out published article</a>
-</p>
-<p>As a future direction, we extend this framework to continuous-variable states to capture individuals&rsquo; levels of engagement. This extension allows analysis of both microscopic and macroscopic dynamics, linking localized behaviors to global system evolution. The flexibility of zooming into the nodal temporal dynamics vs. the population-level dynamics also allows further connection with empirical social dynamics data. Additionally, we aim to incorporate modular community structures and temporal networks to study their impact on collective dynamics.
 </p>
 <p><br />
 </p>
@@ -75,11 +77,18 @@ MathJax.Hub.Config({
 </p>
 <p><b>Learning Dynamics of Information Dissemination among LLM Agents</b>
 </p>
+<div style="float:right; width:320px; max-width:45%; margin:0 0 10px 20px;">
+<img src="LLM_Network_Diagram.png" alt="Information spreading on a network of heterogeneous LLM agents" style="width:100%;">
+<p style="font-size:90%; margin:5px 0 0;">
+Information spread of news about an offline event through a network of LLM agents with heterogeneous personality traits (color).
+</p>
+</div>
 <p>Online information dissemination is increasingly shaped by automated accounts and LLM-based agents, motivating mathematical models for information spread in heterogeneous agent networks. In this project, we study information propagation on networks of Large Language Model (LLM) agents, where agent behavior is governed by heterogeneous personality traits and probabilistic decision-making. We investigate how different event types and agent heterogeneity influence collective dynamics of information dissemination. We introduce two models: (i) a stochastic agent-based network model and (ii) a system of differential equations derived from a mean-field approximation of the agent dynamics. We fit these models to simulations of armed-conflict news dissemination on networks, where LLM agents with predefined personality traits interact on random graphs. Despite the complexity of agent behavior and event types, we find that the collective dynamics are more accurately described by a reduced Susceptible–Infected (SI)-type model with two effective transmission rates, providing a more accurate low-dimensional description than the detailed stochastic agent-based model. This result suggests that high-dimensional agent interactions give rise to low-dimensional effective dynamics.
 </p>
 <p><a href="https://github.com/Moyi-Tian/Learning-LLM-Dynamics" target=&ldquo;blank&rdquo;>See Github page</a><br />
 <a href="https://arxiv.org/abs/2602.23437" target=&ldquo;blank&rdquo;>Check out preprint for this project</a>
 </p>
+<div style="clear:both;"></div>
 <p><br />
 </p>
 <p><b>Inferring Interaction Structure in Opinion Dynamics</b>
@@ -115,6 +124,7 @@ MathJax.Hub.Config({
 </p>
 <p><i>Research with Dr. Pablo Moriano at Oak Ridge National Laboratory</i>
 </p>
+<img src="CommunityRobustness_Illustration.png" alt="Adding edges and comparing communities" style="float:right; width:220px; max-width:40%; margin:0 0 10px 20px;">
 <p>Many complex systems such as critical infrastructures, biological networks and social groups, exhibits network structures, and among network properties, communities (or clusters) typically represent essential functional or behavioral units in the networks. These real networks change dynamically and their underlying community structure therefore also evolves over time. Our study focuses on understanding how the community robustness is affected by edge-addition perturbation to the networks. We propose different edge-addition strategies and analyze the effect in synthetic and empirical temporal networks based on computational experiments using community detection algorithms and community similarity metrics. We find that the robustness of communities depends strongly on the choice of detection method.
 </p>
 <p><a href="CommunityRobustness_Poster.pdf" target=&ldquo;blank&rdquo;>Check out poster</a> presented at Dynamics Days US 2023 <br />
@@ -123,6 +133,7 @@ MathJax.Hub.Config({
 <p><a href="https://github.com/Moyi-Tian/CommunityRobustness" target=&ldquo;blank&rdquo;>See Github page</a> <br />
 <a href="https://link.aps.org/doi/10.1103/PhysRevE.108.054302" target=&ldquo;blank&rdquo;>See the published paper</a>
 </p>
+<div style="clear:both;"></div>
 <p><br />
 </p>
 <p><b>Class Project: Mesh Texture: Learning Continuous Texture Representation for Conditional and Unconditional Texture Synthesis of 3D Meshes</b>
@@ -158,7 +169,7 @@ MathJax.Hub.Config({
 <p><a href="https://iopscience.iop.org/article/10.1088/1361-6404/ab3dee" target=&ldquo;blank&rdquo;>See the published paper</a></p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2026-08-19, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2026-10-01, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>
